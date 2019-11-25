@@ -11,6 +11,37 @@ Equipe:
 - Matheus Araújo
 - Rafael Azevedo
 
+Content:
+
+- [Contextualizção](##Contextualizção)
+    - [A problemática](###A\ problemática)
+    - [Impacto](###Impacto)
+    - [A proposta de solução](###A\ proposta\ de\ solução)
+- [Features](##Features)
+    - [Cadastro](###Cadastro)
+    - [Login](###Login)
+        - [Primeiro Login](####Primeiro\ Login)
+        - [Demais Logins](####Demais\ Logins)
+    - [Fazer Agendamento](###Fazer\ Agendamento)
+    - [Acompanhar Agendamento](###Acompanhar\ Agendamento)
+    - [Notificação de Agendamento pelo APP](###Notificação\ de\ Agendamento\ pelo\ APP)
+    - [Impacto](###Perfil\ e\ Histórico\ do\ Aluno)
+        - [LoAlunogin](####Aluno)
+        - [Departamento](####Departamento)  
+- [Tecnologias](##Tecnologias)
+    - [Spring Boot e PostgreSQL](###Spring\ Boot\ e\ PostgreSQL)
+    - [Integração com o Heroku](###Integração\ com\ o\ Heroku)
+    - [GitHub](###GitHub)
+    - [ReactJS e PWA](###ReactJS\ e\ PWA)
+- [Elicitação de Requisitos](##Elicitação\ de\ Requisitos)
+    - [Entrevista com os Potenciais Clientes](###Entrevista\ com\ os\ Potenciais\ Clientes)
+    - [User Stories (US)](###User\ Stories\ (US))
+    - [Requisitos Funcionais](###Requisitos\ Funcionais)
+    - [Especificação dos atores da aplicação](###Especificação\ dos\ atores\ da\ aplicação)
+    - [Casos de Uso](###Casos\ de\ Uso)
+    - [Diagrama de Casos de Uso](###Diagrama\ de\ Casos\ de\ Uso)
+    - [Diagrama de Atividades](###Diagrama\ de\ Atividades)
+
 ## Contextualizção
 
 ### A problemática
@@ -236,7 +267,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | Clicar no botão de Sign up.
 Saídas e pós condições | Usuário cadastrado.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -252,7 +283,7 @@ Saídas e pós condições | Usuário cadastrado.
     - Fluxo Secundário
         - Caso haja alguma incongruência no item 3, uma mensagem de erro deverá ser emitida em tela;
         - Caso haja divergência no item 4, uma mensagem de advertência deverá ser emitida em tela.
-
+------
 ID | RF-02
 ---- | ----
 Nome | Profile UA
@@ -262,7 +293,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01
 Saídas e pós condições | Perfil gerado e visualizado com sucesso.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -273,7 +304,7 @@ Saídas e pós condições | Perfil gerado e visualizado com sucesso.
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UA deverá ser redirecionado para a tela principal.
-
+------
 ID | RF-03
 ---- | ----
 Nome | Management UA
@@ -283,7 +314,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01
 Saídas e pós condições |
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -293,7 +324,7 @@ Saídas e pós condições |
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ID | RF-04
 ---- | ----
 Nome | Login UC
@@ -303,7 +334,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições |
 Saídas e pós condições | Login realizado com sucesso
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -314,7 +345,7 @@ Saídas e pós condições | Login realizado com sucesso
 
     - Fluxo Secundário
         - Caso haja alguma incongruência no item 2, uma mensagem de erro deverá ser mostrada em tela e o UC deverá tentar novamente ou sair do sistema.
-
+------
 ID | RF-05
 ---- | ----
 Nome | Profile UC
@@ -324,7 +355,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-04
 Saídas e pós condições | Perfil gerado e visualizado com sucesso.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -335,7 +366,7 @@ Saídas e pós condições | Perfil gerado e visualizado com sucesso.
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UC deverá ser redirecionado para a tela principal.
-
+------
 ID | RF-06
 ---- | ----
 Nome | Scheduling UC
@@ -345,7 +376,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01; RF-04
 Saídas e pós condições | Agendamento realizado com sucesso.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -357,7 +388,7 @@ Saídas e pós condições | Agendamento realizado com sucesso.
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ID | RF-07
 ---- | ----
 Nome | Attendance UC
@@ -367,7 +398,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01; RF-04; RF-05
 Saídas e pós condições | Acompanhamento verificado com sucesso
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -378,7 +409,7 @@ Saídas e pós condições | Acompanhamento verificado com sucesso
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ID | RF-08
 ---- | ----
 Nome | Notification UC
@@ -388,7 +419,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01; RF-04; RF-05
 Saídas e pós condições | Notificação enviada com sucesso
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -397,7 +428,7 @@ Saídas e pós condições | Notificação enviada com sucesso
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ID | RF-09
 ---- | ----
 Nome | Record UC
@@ -407,7 +438,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01; RF-04; RF-05; RF-07
 Saídas e pós condições | Histórico emitido e visualizado com sucesso.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -418,7 +449,7 @@ Saídas e pós condições | Histórico emitido e visualizado com sucesso.
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ID | RF-10
 ---- | ----
 Nome | Record UA
@@ -428,7 +459,7 @@ Prioridade | Essencial
 Requisitos Não-Funcionais associados |
 Entradas e pré-condições | RF-01; RF-05; RF-06; RF-07
 Saídas e pós condições | Histórico emitido e visualizado com sucesso.
-
+------
 - Fluxo de Eventos
     - Fluxo Principal
 
@@ -437,7 +468,7 @@ Saídas e pós condições | Histórico emitido e visualizado com sucesso.
 
     - Fluxo Secundário
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
-
+------
 ### Diagrama de Casos de Uso
 
 Pode-se visualizar abaixo o diagrama de Casos de uso da modelagem do sistema SIAD. O diagrama também encontra-se através deste [link](https://www.lucidchart.com/publicSegments/view/79574687-8144-44c6-b438-6ff1ad6f6235).
