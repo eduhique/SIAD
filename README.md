@@ -155,6 +155,5 @@ ID | US-01
 Título | Cadastro de Usuário do Departamento
 Motivação | No intuito de utilizar o sistema e gerenciar os agendamentos do seu departamento, o cadastro se faz necessário.
 Descrição: | O módulo de cadastro é dividido em duas partes:
-
-- A primeira parte é um formulário simples de cadastro de  informações relativas ao docente ou servidor que vai atender neste departamento. Se o departemento tiver mais de uma pessoa que atende, deve colocar os dados do responsável pelo departamento. As informações são: Nome, Sobrenome, Identificador Único na universidade (e.g SIAPE), email.
-- A segunda parte é um formulário sobre as informações do departamento que está criando. As informações que irá inserir são: Nome do departamento, localização dentro da universidade, Dias de atendimento e horários. Haverá também uma tabela dinâmica com duas colunas ( atendimento | tempo), onde será adicionado os tipos de atendimento e o tempo que leva cada um.
+Descrição: | - A primeira parte é um formulário simples de cadastro de  informações relativas ao docente ou servidor que vai atender neste departamento. Se o departemento tiver mais de uma pessoa que atende, deve colocar os dados do responsável pelo departamento. As informações são: Nome, Sobrenome, Identificador Único na universidade (e.g SIAPE), email.
+Descrição: | - A segunda parte é um formulário sobre as informações do departamento que está criando. As informações que irá inserir são: Nome do departamento, localização dentro da universidade, Dias de atendimento e horários. Haverá também uma tabela dinâmica com duas colunas ( atendimento/tempo), onde será adicionado os tipos de atendimento e o tempo que leva cada um.
