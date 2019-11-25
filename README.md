@@ -151,7 +151,297 @@ Apesar dessas tecnologias não serem ensinadas ao longo da graduação, elas sã
 ### User Stories (US)
 
 ID | US-01
---- | :----
+--- | ----
 Título | Cadastro de Usuário do Departamento
 Motivação | No intuito de utilizar o sistema e gerenciar os agendamentos do seu departamento, o cadastro se faz necessário.
-Descrição: | O módulo de cadastro é dividido em duas partes: A primeira parte é um formulário simples de cadastro de  informações relativas ao docente ou servidor que vai atender neste departamento. Se o departemento tiver mais de uma pessoa que atende, deve colocar os dados do responsável pelo departamento. As informações são: Nome, Sobrenome, Identificador Único na universidade (e.g SIAPE), email. A segunda parte é um formulário sobre as informações do departamento que está criando. As informações que irá inserir são: Nome do departamento, localização dentro da universidade, Dias de atendimento e horários. Haverá também uma tabela dinâmica com duas colunas ( atendimento/tempo), onde será adicionado os tipos de atendimento e o tempo que leva cada um.
+Descrição | O módulo de cadastro é dividido em duas partes: A primeira parte é um formulário simples de cadastro de  informações relativas ao docente ou servidor que vai atender neste departamento. Se o departemento tiver mais de uma pessoa que atende, deve colocar os dados do responsável pelo departamento. As informações são: Nome, Sobrenome, Identificador Único na universidade (e.g SIAPE), email. A segunda parte é um formulário sobre as informações do departamento que está criando. As informações que irá inserir são: Nome do departamento, localização dentro da universidade, Dias de atendimento e horários. Haverá também uma tabela dinâmica com duas colunas ( atendimento/tempo), onde será adicionado os tipos de atendimento e o tempo que leva cada um.
+
+ID | US-02
+--- | ----
+Título | Cadastro/Login de Usuário Aluno (Primeiro login)
+Motivação | No intuito de utilizar o sistema e gerenciar seus agendamentos, o cadastro se faz necessário.
+Descrição | O cadastro do aluno deve ser forma simplificada e deve ser pré realizadas pelas entidades superiores da instituição. Para fazer o cadastro/Primeiro login, o aluno insere a matrícula e o CPF para entrar no sistema pela primeira vez e logo em seguida irá criar uma nova senha. Nas demais vezes, o aluno insere apenas matrícula e a senha criada no primeiro acesso.
+
+ID | US-03
+--- | ----
+Título | Fazer Agendamento (Usuário Aluno)
+Motivação | Solucionar um problema com o departamento envolvido no horário conveniente ao aluno e ao responsável.
+Descrição | O aluno, de forma simples, irá selecionar o departamento quer atendimento para solucionar seu problema, selecionar o tipo do atendimento, horário de interesse que esteja disponível e uma breve descrição do motivo do atendimento.
+
+ID | US-04
+--- | ----
+Título | Acompanhar Agendamentos (Usuários Alunos)
+Motivação | Gerenciar os agendamentos que o usuário possui em andamento.
+Descrição: | O aluno poderá ver, em uma dashboard, todos os agendamentos que fez e ao clicar em um poderá ver os detalhes desse agendamento.
+
+ID | US-05
+--- | ----
+Título | Visualizar Agendamentos (Usuário Departamento)
+Motivação | Gerenciar os agendamentos realizados pelos alunos de modo a descomplicar os problemas enfrentados pelos departamentos.
+Descrição: | O Usuário do departamento, poderá visualizar todos os agendamentos que foram realizados pelos aluno em ordem cronológica. Ao selecionar uma agendamento de interesse, observará os detalhes do aluno e agendamento.
+
+ID | US-06
+--- | ----
+Título | Visualizar Perfil (Usuário Aluno)
+Motivação | Facilitar a identificação do aluno para o departamento em questão e permitir ao aluno ter fácil manipulação de dados seus.
+Descrição: | O aluno poderá visualizar o seu perfil, que possui suas informações pessoais e académicas. Poderá também, alterar sua foto de perfil,  senha e dados pessoais. Os dados acadêmicos não poderão ser alterados.
+
+ID | US-07
+--- | ----
+Título | Visualizar Perfil (Usuário Departamento)
+Motivação | Gerenciar (visualizar e alterar) os dados referentes ao departamento permitindo que o aluno identifique o departamento de forma simples
+Descrição: | O usuário departamento poderá visualizar o seu perfil, que possui suas informações do departamento e do seu responsável.  Poderá também, senha e dados do departamento e docente responsável. É possível também editar tabela de serviços oferecidos.
+
+ID | US-08
+--- | ----
+Título | Visualizar Histórico (Usuário Aluno)
+Motivação | Permitir o aluno visualizar o histórico de seus agendamentos.
+Descrição: | O aluno poderá visualizar de maneira simples o histórico de todos agendamento que já passaram cronologicamente.
+
+ID | US-09
+--- | ----
+Título | Visualizar perfil e histórico do aluno (Usuário Departamento)
+Motivação | Dá ao departamento o acesso ao perfil e histórico do aluno que quer prestar atendimento.
+Descrição: | O departamento, poderá ter acesso ao perfil, contendo as informações pessoais e acadêmicas de interesse geral, foto do perfil e histórico dos últimos agendamentos realizados pelo aluno.
+
+### Requisitos Funcionais
+
+ID | Descrição | Prioridade
+:----: | :----: | :----: 
+RF-01 | Register UA     | Essencial
+RF-02 | Profile UA      | Essencial
+RF-03 | Management UA   | Essencial
+RF-04 | Login UC        | Essencial
+RF-05 | Profile UC      | Essencial
+RF-06 | Scheduling UC   | Essencial
+RF-07 | Attendance UC   | Essencial
+RF-08 | Notification UC | Essencial
+RF-09 | Record UC       | Essencial
+RF-10 | Record UA       | Essencial
+
+### Especificação dos atores da aplicação
+
+- **UserAdmin (UA):** Entidade, organização, representação, repartição ou instituição que deseje implantar determinado serviço que seja prestado de forma contínua com a necessidade de se alocar os beneficiados em ordem específica.
+- **UserCommom (UC):** Pessoa física ou jurídica que eventualmente estará disposto a usufruir dos serviços prestados pelo UserAdmin.
+- **Time (T):** Gradiente de tempo necessário para direcionar o UA em sua alocação de espaço para atendimento e orientar o UC a fim de mostrar os horários disponíveis.
+
+### Casos de Uso
+
+ID | RF-01
+---- | ----
+Nome | Register UA
+Descrição | UserAdmin deverá conseguir se cadastrar na plataforma de forma simples e prática. O cadastro na aplicação deverá ser realizado pelas instâncias superiores dentro da instituição.
+Atores | UserAdmin
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | Clicar no botão de Sign up.
+Saídas e pós condições | Usuário cadastrado.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O usuário clica no botão Sign Up;
+        1. O sistema redireciona para a tela de cadastro;
+        1. O usuário preenche os seus dados seguindo o modelo exibido;
+        1. O usuário concorda com os termos de uso;
+        1. O sistema salva os dados do usuário no banco de dados;
+        1. O sistema salva os dados de usuário e token no navegador do usuário;
+        1. O sistema emite uma mensagem informando que o cadastro foi realizado com sucesso;
+        1. O sistema redireciona para a página principal.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência no item 3, uma mensagem de erro deverá ser emitida em tela;
+        - Caso haja divergência no item 4, uma mensagem de advertência deverá ser emitida em tela.
+
+ID | RF-02
+---- | ----
+Nome | Profile UA
+Descrição | UserAdmin deverá ter uma sessão de usuário onde esta fornecerá informações sobre o mesmo, além de mostrar requisições feitas  a ele atualmente e anteriormente. O profile deverá conter informações cadastrais, e dados sobre requisições feitas por algum UC em determinado instante de tempo.
+Atores | UserCommom, UserAdmin
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01
+Saídas e pós condições | Perfil gerado e visualizado com sucesso.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. Após a realização do login, o UA deverá ser redirecionado a tela principal do sistema;
+        1. Onde esta deverá dispor das opções pertinentes ao sistema, como perfil, atendimento, agendamento e histórico;
+        1. O UA deverá escolher dentre uma destas opções ou então sair do sistema;
+        1. Escolhendo a opção de perfil, deverá ser mostrado em tela informações sobre o UA.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UA deverá ser redirecionado para a tela principal.
+
+ID | RF-03
+---- | ----
+Nome | Management UA
+Descrição | UserAdmin deverá conseguir gerenciar o fluxo de atividade previsto em sua prestação de serviço. O gerenciamento compete no uso de averiguar quantos UC serão atendidos em determinado espaço de tempo.
+Atores | UserAdmin, UserCommom, Time
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01
+Saídas e pós condições |
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UA entra em seu dashboard;
+        1. O UA visualiza sua fila virtual criada;
+        1. O UA verifica informações sobre a fila e sobre os usuários que serão beneficiados pelo serviço.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+ID | RF-04
+---- | ----
+Nome | Login UC
+Descrição | UserCommom deverá conseguir realizar o login de forma simples e prática na aplicação. O primeiro login deverá ser realizado com sua matrícula e cpf. Logo após o primeiro login, o UC deverá cadastrar uma nova senha para acesso.
+Atores | UserCommom
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições |
+Saídas e pós condições | Login realizado com sucesso
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UC entra na aplicação e clica no botão de Sign In;
+        1. Logo após aparecerá os campos de user e senha, onde o mesmo deverá preencher com sua matrícula e CPF respectivamente;
+        1. Após realizado o primeiro login, o UC será redirecionado para cadastrar uma nova senha para acessos futuros;
+        1. Após o Login realizado com sucesso, o usuário é redirecionado para a tela principal.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência no item 2, uma mensagem de erro deverá ser mostrada em tela e o UC deverá tentar novamente ou sair do sistema.
+
+ID | RF-05
+---- | ----
+Nome | Profile UC
+Descrição | UserCommom deverá ter uma sessão de usuário onde esta fornecerá informações sobre o mesmo, além de mostrar requisições feitas anteriormente. O profile deverá conter informações cadastrais, e dados sobre requisições feitas a algum UA em tempo passado.
+Atores | UserCommom, UserAdmin
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-04
+Saídas e pós condições | Perfil gerado e visualizado com sucesso.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. Após a realização do login, o UC deverá ser redirecionado a tela principal do sistema;
+        1. Onde esta deverá dispor das opções pertinentes ao sistema, como perfil, atendimento, agendamento e histórico;
+        1. O UC deverá escolher dentre uma destas opções ou então sair do sistema;
+        1. Escolhendo a opção de perfil, deverá ser mostrado em tela informações sobre o UC.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UC deverá ser redirecionado para a tela principal.
+
+ID | RF-06
+---- | ----
+Nome | Scheduling UC
+Descrição | O UserCommom deverá conseguir realizar um agendamento de forma simples e prática na aplicação. O agendamento consiste em se dispor a receber um serviço prestado por algum UA em algum T.
+Atores | UserAdmin, UserCommom, Time
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01; RF-04
+Saídas e pós condições | Agendamento realizado com sucesso.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UC entra em sua tela principal;
+        1. O UC pesquisa por serviço ou UA que esteja ofertando serviço a ser prestado;
+        1. O UC seleciona o serviço que deseja;
+        1. O UC solicita seu atendimento;
+        1. O UC entra na fila de atendimento do serviço a ser prestado.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+ID | RF-07
+---- | ----
+Nome | Attendance UC
+Descrição | O UserCommom deverá conseguir realizar o acompanhamento de sua solicitação de forma simples e prática na aplicação. O acompanhamento consiste em verificar o andamento da sua solicitação dentro do fluxo de serviços prestados, assim como sua posição na fila de atendimento.
+Atores | UserAdmin, UserCommom
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01; RF-04; RF-05
+Saídas e pós condições | Acompanhamento verificado com sucesso
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UC entra na tela principal da aplicação;
+        1. O UC seleciona o serviço o qual foi qualificado e que deseja verificar o status;
+        1. O UC verifica informações sobre o andamento da sua solicitação assim como sua posição em espera;
+        1. O UC retorna à página principal.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+ID | RF-08
+---- | ----
+Nome | Notification UC
+Descrição | O UserCommom deverá receber uma notificação de quando estiver próximo de ter sua solicitação atendida. A notificação consiste em uma mensagem de texto mostrada em tela do quão próxima está a vez do UC ser atendido.
+Atores | UserAdmin, UserCommom
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01; RF-04; RF-05
+Saídas e pós condições | Notificação enviada com sucesso
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UC cadastrado em um serviço prestado por algum UA está próximo de ser atendido;
+        1. A aplicação emite uma mensagem de texto que deverá aparecer em tela para o usuário informando o quão próximo este está de ser atendido.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+ID | RF-09
+---- | ----
+Nome | Record UC
+Descrição | O UserCommom deverá ter um histórico de atendimento a fim de prestar informarções sobre requisições anteriores realizadas pelo próprio UserCommom para algum UserAdimin em algum Time.
+Atores | UserAdmin, UserCommom
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01; RF-04; RF-05; RF-07
+Saídas e pós condições | Histórico emitido e visualizado com sucesso.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O UserCommom realiza o login e seleciona a opção histórico na tela principal;
+        1. Neste, o UC visualiza informações sobre atendimentos realizados anteriormente.
+        1. Em contrapartida, quando um UA recebe uma solicitação de atendimento, o mesmo receberá o histórico do UC;
+        1. Este recebimento tem o intuito de orientar o UA a conduzir o atendimento.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+ID | RF-10
+---- | ----
+Nome | Record UA
+Descrição | O histórico UA, que por sua vez, visualiza as requisições feitas pelo UserCommom e o orienta em como realizar o atendimento em detrimento dos atendimentos anteriores.
+Atores | UserAdmin, UserCommom
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01; RF-05; RF-06; RF-07
+Saídas e pós condições | Histórico emitido e visualizado com sucesso.
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. Em contrapartida, quando um UA recebe uma solicitação de atendimento, o mesmo receberá o histórico do UC;
+        1. Este recebimento tem o intuito de orientar o UA a conduzir o atendimento.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
+
+### Diagrama de Casos de Uso
+
+Pode-se visualizar abaixo o diagrama de Casos de uso da modelagem do sistema SIAD. O diagrama também encontra-se através deste [link](https://www.lucidchart.com/publicSegments/view/79574687-8144-44c6-b438-6ff1ad6f6235).
+
+<img alt="Tela de alteração de senha" align="center" src ="Diagrama de Caso de uso/Diagrama.png">
+
+### Diagrama de Atividades
