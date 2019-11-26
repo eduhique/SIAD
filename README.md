@@ -41,143 +41,144 @@ Content:
     - [Casos de Uso](#Casos-de-Uso)
     - [Diagrama de Casos de Uso](#Diagrama-de-Casos-de-Uso)
     - [Diagrama de Atividades](#Diagrama-de-Atividades)
+        - [Diagramas de Atividades dos Casos de Uso](#Diagramas-de-Atividades-dos-Casos-de-Uso)
+        - [Diagramas Gerais que representam todas as funcionalidades do sistema](#Diagramas-Gerais-que-representam-todas-as-funcionalidades-do-sistema)
 
 ## Contextualizção
 
 ### A problemática
 
-<p style="text-align: justify;"> Em uma instituição acadêmica tempo é um recurso bastante valioso. Docentes, discentes e técnicos administrativos possuem calendário e prazos muito apertados para realizar suas atividades. Essa problemática tende a ficar mais caótica durante certas épocas do ano acadêmico, devido a eventos específicos que demandam um esforço extra de todas as partes. 
+<p align= "justify"> Em uma instituição acadêmica tempo é um recurso bastante valioso. Docentes, discentes e técnicos administrativos possuem calendário e prazos muito apertados para realizar suas atividades. Essa problemática tende a ficar mais caótica durante certas épocas do ano acadêmico, devido a eventos específicos que demandam um esforço extra de todas as partes.</p>
 
-Um exemplo bastante comum desses eventos são os períodos de matrícula e ajustes de matrículas. De um lado, o coordenador tem que dividir o seu tempo entre resolver problemas relativos às cadeiras que estão sendo ofertadas e atender os alunos que têm problemas relativos às suas respectivas matrículas. Por outro lado, os alunos ficam divididos entre assistir aula e ficar esperando em filas longas na porta de suas coordenações esperando para ser atendido, onde nem mesmo sabe se vai ou não ser atendido.</p>
+<p align= "justify">Um exemplo bastante comum desses eventos são os períodos de matrícula e ajustes de matrículas. De um lado, o coordenador tem que dividir o seu tempo entre resolver problemas relativos às cadeiras que estão sendo ofertadas e atender os alunos que têm problemas relativos às suas respectivas matrículas. Por outro lado, os alunos ficam divididos entre assistir aula e ficar esperando em filas longas na porta de suas coordenações esperando para ser atendido, onde nem mesmo sabe se vai ou não ser atendido.</p>
 
 ### Impacto
 
-<p style="text-align: justify;">Docentes e técnicos administrativos que prestam atendimento e alunos que necessitam de atendimento acabam tendo que recorrer a métodos nada dinâmicos e intuitivos para gerenciar e realizar seu agendamentos diários. Essa métodos vão do mais arcaico, como agenda física, ao mais moderno, como bloco de notas ou agendas digitais. Porém o maior problema desses métodos é a necessidade da interação humana para gerenciá-los.</p>
+<p align= "justify">Docentes e técnicos administrativos que prestam atendimento e alunos que necessitam de atendimento acabam tendo que recorrer a métodos nada dinâmicos e intuitivos para gerenciar e realizar seu agendamentos diários. Essa métodos vão do mais arcaico, como agenda física, ao mais moderno, como bloco de notas ou agendas digitais. Porém o maior problema desses métodos é a necessidade da interação humana para gerenciá-los.</p>
 
 ### A proposta de solução
 
-<p style="text-align: justify;">Com um sistema de agendamento os Docentes, discentes e técnicos administrativos terão uma possibilidade de maior controle sobre seus agendamentos de maneira fácil e intuitiva. O sistema de agendamento vai permitir que docentes e técnicos administrativos crie e gerencie departamentos virtuais que poderão prestar atendimentos ao alunos. O sistema vai permitir que os alunos possam fazer agendamento e gerenciá-los.</p>
+<p align= "justify">Com um sistema de agendamento os Docentes, discentes e técnicos administrativos terão uma possibilidade de maior controle sobre seus agendamentos de maneira fácil e intuitiva. O sistema de agendamento vai permitir que docentes e técnicos administrativos crie e gerencie departamentos virtuais que poderão prestar atendimentos ao alunos. O sistema vai permitir que os alunos possam fazer agendamento e gerenciá-los.</p>
 
 ## Features
 
-<p style="text-align: justify;">Neste tópico será descrito as features que o SIAD será capaz de realizar.</p>
+<p align= "justify">Neste tópico será descrito as features que o SIAD será capaz de realizar.</p>
 
 ### Cadastro
 
-<p style="text-align: justify;">O cadastro no aplicativo será realizado pelas coordenações e departamentos que farão uso do aplicativo. Essa medida facilitará o uso por parte dos alunos e dará um controle aos departamento sobre quem pode usar o app para fazer o agendamento.</p>
+<p align= "justify">O cadastro no aplicativo será realizado pelas coordenações e departamentos que farão uso do aplicativo. Essa medida facilitará o uso por parte dos alunos e dará um controle aos departamento sobre quem pode usar o app para fazer o agendamento.</p>
 
 ### Login
 
 #### Primeiro Login
 
-<p style="text-align: justify;">O primeiro login na plataforma será feito usando a matrícula como login e o CPF como senha. Ao fazer o login o usuário será redirecionado para o uma tela onde irá cadastrar sua senha pessoal e intransferível.</p>
+<p align= "justify">O primeiro login na plataforma será feito usando a matrícula como login e o CPF como senha. Ao fazer o login o usuário será redirecionado para o uma tela onde irá cadastrar sua senha pessoal e intransferível.</p>
 
-<img alt="Tela de alteração de senha" align="center" src ="Prototipagem/Primeiro Login.jpg">
+<img alt="Tela de alteração de senha" align="center" src ="Prototipagem/Login.png">
 
 #### Demais Logins
 
-<p style="text-align: justify;">Após ter sido feito o primeiro login os próximos logins serão feitos usando a matrícula e a senha cadastrada.</p>
+<p align= "justify">Após ter sido feito o primeiro login os próximos logins serão feitos usando a matrícula e a senha cadastrada.</p>
 
-<img alt="Tela de alteração de senha" align="center" src ="Prototipagem/Login.jpg">
+<img alt="Login Tradicional" align="center" src ="Prototipagem/Login Tradicional.png">
 
 ### Fazer Agendamento
 
-<p style="text-align: justify;">Para fazer o agendamento, um aluno vai selecionar um dos departamentos que ele que pretende ter atendimento, selecione um horário de atendimento, o motivo e uma breve descrição do motivo. Se ele for elegível para aquele departamento o agendamento será feito.
+<p align= "justify">Para fazer o agendamento, um aluno vai selecionar um dos departamentos que ele que pretende ter atendimento, selecione um horário de atendimento, o motivo e uma breve descrição do motivo. Se ele for elegível para aquele departamento o agendamento será feito.</p>
 
-Um aluno é elegível, se sua matrícula é aceita para o departamento alvo. Por exemplo, não faz sentido um aluno de de Engenharia Elétrica querer atendimento na coordenação de Geografia.
+<p align= "justify">Um aluno é elegível, se sua matrícula é aceita para o departamento alvo. Por exemplo, não faz sentido um aluno de de Engenharia Elétrica querer atendimento na coordenação de Geografia.</p>
 
-Os horários de agendamentos são disponibilizados e controlados pelos departamentos que farão uso do aplicativo.
-</p>
+<p align= "justify">Os horários de agendamentos são disponibilizados e controlados pelos departamentos que farão uso do aplicativo.</p>
 
-<img alt="Tela de alteração de senha" align="center" src ="Prototipagem/Print para melhor visualização.png">
+<img alt="Fazer agendamento" align="center" src ="Prototipagem/Print.png">
 
 ### Acompanhar Agendamento
 
-<p style="text-align: justify;">Um aluno poderá acompanhar os agendamentos que fez nos departamentos da Universidade. Ao Abrir um agendamento, poderá visualizar algumas informações adicionais e poderá desmarcar caso, ache necessário.</p>
+<p align= "justify">Um aluno poderá acompanhar os agendamentos que fez nos departamentos da Universidade. Ao Abrir um agendamento, poderá visualizar algumas informações adicionais e poderá desmarcar caso, ache necessário.</p>
 
-<img alt="Tela de alteração de senha" align="center" src ="Prototipagem/Print 2.png">
+<img alt="Acompanhar agendamento" align="center" src ="Prototipagem/Print 2.png">
 
 ### Notificação de Agendamento pelo APP
 
-<p style="text-align: justify;">Cerca de 5 minutos antes do atendimento o aluno receberá uma notificação em seu dispositivo avisando-o do atendimento.</p>
+<p align= "justify">Cerca de 5 minutos antes do atendimento o aluno receberá uma notificação em seu dispositivo avisando-o do atendimento.</p>
 
 ### Perfil e Histórico do Aluno
 
-<p style="text-align: justify;">Tanto o aluno como o departamento poderão visualizar seus perfis.</p>
+<p align= "justify">Tanto o aluno como o departamento poderão visualizar seus perfis.</p>
+
+<img alt="Histórico do aluno" align="center" src ="Prototipagem/Print 3.png">
 
 #### Aluno
 
-<p style="text-align: justify;">Um aluno terá acesso a seu perfil que contém informações pessoais e acadêmicas, bem como uma foto de perfil. O mesmo poderá alterar algumas das informações pessoais e académicas contidas. Além disso, poderá ver um histórico dos últimos agendamentos que realizou.</p>
+<p align= "justify">Um aluno terá acesso a seu perfil que contém informações pessoais e acadêmicas, bem como uma foto de perfil. O mesmo poderá alterar algumas das informações pessoais e académicas contidas. Além disso, poderá ver um histórico dos últimos agendamentos que realizou.</p>
 
 #### Departamento
 
-<p style="text-align: justify;">Um departamento também tem um perfil contendo informações sobre o departamento e <code>(e.g coordenador)</code>. Algumas informações poderão ser alteradas.
+<p align= "justify">Um departamento também tem um perfil contendo informações sobre o departamento e <code>(e.g coordenador)</code>. Algumas informações poderão ser alteradas.</p>
 
-Além disso o departamento terá acesso ao perfil e histórico dos alunos que possui agendamentos para no departamentos.</p>
+<p align= "justify">Além disso o departamento terá acesso ao perfil e histórico dos alunos que possui agendamentos para no departamentos.</p>
 
 ## Tecnologias
 
-<p style="text-align: justify;">A principal prerrogativa para a escolha de algumas tecnologias é que os alunos da graduação interessados, possam contribuir no desenvolvimento e manutenção do projeto. Com isso queremos incentivar ao graduandos a contribuir em projetos open source.</p>
+<p align= "justify">A principal prerrogativa para a escolha de algumas tecnologias é que os alunos da graduação interessados, possam contribuir no desenvolvimento e manutenção do projeto. Com isso queremos incentivar ao graduandos a contribuir em projetos open source.</p>
 
 ### Spring Boot e PostgreSQL
 
-<p style="text-align: justify;">Spring Boot é uma framework baseada em java para desenvolvimento de backend. Já o PostgreSQL é uma aplicação de gerenciamento de banco de dados SQL.  O principal motivo para a escolha dessas tecnologias é que em algum momento da graduação os alunos se deparam com essas ferramentas sendo utilizadas como suporte nas disciplinas. Além disso, Spring Boot é baseada em java, linguagem que é bastante discutida no curso.
+<p align= "justify">Spring Boot é uma framework baseada em java para desenvolvimento de backend. Já o PostgreSQL é uma aplicação de gerenciamento de banco de dados SQL.  O principal motivo para a escolha dessas tecnologias é que em algum momento da graduação os alunos se deparam com essas ferramentas sendo utilizadas como suporte nas disciplinas. Além disso, Spring Boot é baseada em java, linguagem que é bastante discutida no curso.</p>
 
-Com isso a escolhas dessas tecnologias facilita a possibilidade de contribuição dos alunos ao projeto.</p>
+<p align= "justify">Com isso a escolhas dessas tecnologias facilita a possibilidade de contribuição dos alunos ao projeto.</p>
 
 ### Integração com o Heroku
 
-<p style="text-align: justify;">O principal motivo da escolha do Heroku para implantação da aplicação é  sua integração padrão com o PostgreSQL, o que facilita o gerenciamento do banco de dados da aplicação Online.</p>
+<p align= "justify">O principal motivo da escolha do Heroku para implantação da aplicação é  sua integração padrão com o PostgreSQL, o que facilita o gerenciamento do banco de dados da aplicação Online.</p>
 
 ### GitHub
 
-<p style="text-align: justify;">O GitHub é uma plataforma de controle de versionamento bastante disseminada e utilizada dentro da comunidade, sendo essa uma ótima escolha para a disponibilização e controle do versionamento do projeto.</p>
+<p align= "justify">O GitHub é uma plataforma de controle de versionamento bastante disseminada e utilizada dentro da comunidade, sendo essa uma ótima escolha para a disponibilização e controle do versionamento do projeto.</p>
 
 ### ReactJS e PWA
 
-<p style="text-align: justify;">Para o aplicativo cliente foi escolhido o ReactJS para o desenvolvimento de uma aplicação web no conceito de PWA (Progressive Web App), fazendo com que o design se adapte ao dispositivo de acesso e forneça uma experiência agradável ao usuário.
+<p align= "justify">Para o aplicativo cliente foi escolhido o ReactJS para o desenvolvimento de uma aplicação web no conceito de PWA (Progressive Web App), fazendo com que o design se adapte ao dispositivo de acesso e forneça uma experiência agradável ao usuário.</p>
 
-Apesar dessas tecnologias não serem ensinadas ao longo da graduação, elas são bastante utilizadas pelo mercado e é uma ótima opção para aqueles que querem aprender novas tecnologias front end.</p>
+<p align= "justify">Apesar dessas tecnologias não serem ensinadas ao longo da graduação, elas são bastante utilizadas pelo mercado e é uma ótima opção para aqueles que querem aprender novas tecnologias front end.</p>
 
 ## Elicitação de Requisitos
 
 ### Entrevista com os Potenciais Clientes
 
-<p style="text-align: justify;">Como parte da modelagem do sistema, a elicitação dos requisitos foi feita a partir de entrevistas realizadas com alguns coordenadores e observando as demandas e queixas dos alunos. Entrevistou-se os coordenadores de Letras e Meteorologia. Para dar dinâmica a entrevista e manter o foco na obejetivo da mesma, a equipe elaborou algumas perguntas rápidas e diretas que foram feitas aos coordenadores.</p>
+<p align= "justify">Como parte da modelagem do sistema, a elicitação dos requisitos foi feita a partir de entrevistas realizadas com alguns coordenadores e observando as demandas e queixas dos alunos. Entrevistou-se os coordenadores de Letras e Meteorologia. Para dar dinâmica a entrevista e manter o foco na obejetivo da mesma, a equipe elaborou algumas perguntas rápidas e diretas que foram feitas aos coordenadores.</p>
 
 #### Coordenador de Letras ( Português)
 
-<p style="text-align: justify;">O coordenador relatou algumas queixas relativas ao interação com o controle acadêmico e forma como ele recebe e atende os alunos na coordenação. Durante as conversa fizemos algumas perguntas pertinentes a modelagem.
+<p style="text-align: justify">O coordenador relatou algumas queixas relativas ao interação com o controle acadêmico e forma como ele recebe e atende os alunos na coordenação. Durante as conversa fizemos algumas perguntas pertinentes a modelagem.</p>
 
-<b>Pergunta:</b> Quais são as dificuldades enfrentadas com relação ao acesso dos alunos ao coordenador?
+<p align= "justify"><b>Pergunta:</b> Quais são as dificuldades enfrentadas com relação ao acesso dos alunos ao coordenador?</p>
 
-<i><b>Resposta:</b> Ele disse que sempre que pode estar disponível e deixa na porta de sua sala um calendário semanal com seus compromissos dentro da universidade para que os alunos possam o procurar e ter acesso. porém relatou que ainda assim muitos alunos têm medo de ir até a coordenação para conversar com ele e isso muitas vezes gera problemas para o aluno a longo prazo.</i>
+<p align= "justify"><i><b>Resposta:</b> Ele disse que sempre que pode estar disponível e deixa na porta de sua sala um calendário semanal com seus compromissos dentro da universidade para que os alunos possam o procurar e ter acesso. porém relatou que ainda assim muitos alunos têm medo de ir até a coordenação para conversar com ele e isso muitas vezes gera problemas para o aluno a longo prazo.</i></p>
 
-<b>Pergunta:</b> Existe Alguma época que é mais caótica na coordenação?
+<p align= "justify"><b>Pergunta:</b> Existe Alguma época que é mais caótica na coordenação?</p>
 
-<i><b>Resposta:</b> O coordenador relatou que em geral a época, mais caótica é a de ajuste de matrículas, pois, como o controle é muito restritivo com relação às matrículas (citou o exemplo da quantidade mínimas de carga horária), muitos alunos acabam tendo que ir até a coordenação para ter que refazer sua matrícula.</i>
+<p align= "justify"><i><b>Resposta:</b> O coordenador relatou que em geral a época, mais caótica é a de ajuste de matrículas, pois, como o controle é muito restritivo com relação às matrículas (citou o exemplo da quantidade mínimas de carga horária), muitos alunos acabam tendo que ir até a coordenação para ter que refazer sua matrícula.</i></p>
 
-<b>Pergunta:</b> Quais São as funcionalidade que o senhor gostaria de ter em um aplicativo de agendamento?
+<p align= "justify"><b>Pergunta:</b> Quais São as funcionalidade que o senhor gostaria de ter em um aplicativo de agendamento?</p>
 
-<i><b>Resposta:</b> Ele disse que gostaria de que pudesse ver de forma clara ou que a ferramenta o alertasse a quantidade alunos que ele vai atender, o horário (relatou em turnos) e quais problemas irá receber para lidar (citou o exemplo de ajuste de matrícula).</i>
-</p>
+<p align= "justify"><i><b>Resposta:</b> Ele disse que gostaria de que pudesse ver de forma clara ou que a ferramenta o alertasse a quantidade alunos que ele vai atender, o horário (relatou em turnos) e quais problemas irá receber para lidar (citou o exemplo de ajuste de matrícula).</i></p>
 
 #### Coordenador de Meteorologia
 
-<p style="text-align: justify;">
+<p align= "justify">No inicio da entrevista apresentamos uma visão geral do motivo da entrevista e sobre a aplicação que idealizamos. Logo em seguida o professor relatou um pouco sobre suas experiências enquanto coordenador e professor.</p>
 
-<b>Pergunta:</b> Quais são as dificuldades enfrentadas com relação ao acesso dos alunos ao coordenador?
+<p align= "justify"><b>Pergunta:</b> Quais são as dificuldades enfrentadas com relação ao acesso dos alunos ao coordenador?</p>
 
-<i><b>Resposta:</b></i>
+<p align= "justify"><i><b>Resposta:</b>O Coordenador que possui poucos alunos, sendo um universo de cerca de 58 alunos. As principais dificuldades encontradas é a falta de conhecimentos dos alunos sobre os horários da coordenação e quais os tipos de problemas que a coordenação pode resolver</i></p>
 
-<b>Pergunta:</b> Existe Alguma época que é mais caótica na coordenação?
+<p align= "justify"><b>Pergunta:</b> Existe Alguma época que é mais caótica na coordenação?</p>
 
-<i><b>Resposta:</b></i>
+<p align= "justify"><i><b>Resposta:</b>Acordo como professor a época mais caótica é o período de matrícula, pois o curso tem apenas um entrada por ano e entram, de acordo com ele, um novo curso, pois são cerca de 45 alunos novos. Além disso, o professor relatou que sente dificuldade de conversar com os alunos, pois muitos não procuram a coordenação para tratar de dúvidas relativas ao curso porque acham que não cabe a coordenação.</i></p>
 
-<b>Pergunta:</b> Quais São as funcionalidade que o senhor gostaria de ter em um aplicativo de agendamento?
+<p align= "justify"><b>Pergunta:</b> Quais São as funcionalidade que o senhor gostaria de ter em um aplicativo de agendamento?</p>
 
-<i><b>Resposta:</b></i>
-</p>
+<p align= "justify"><i><b>Resposta:</b>O coordenador relatou que gostaria de ter uma uma funcionalidade que permitisse visualizar o perfil do aluno com foto e o histórico de agendamentos dele. Para corroborar com sua sugestão citou o exemplo de um aluno da sua graduação que faz acompanhamento psicológicos dentro da universidade e é acompanhado pela coordenação. Para ele seria interessante ter acesso ao seu histórico, para saber o mesmo está indo ao acompanhamentos.</i></p>
 
 ### User Stories (US)
 
@@ -240,15 +241,16 @@ Descrição: | O departamento, poderá ter acesso ao perfil, contendo as informa
 ID | Descrição | Prioridade
 :----: | :----: | :----: 
 RF-01 | Register UA     | Essencial
-RF-02 | Profile UA      | Essencial
-RF-03 | Management UA   | Essencial
-RF-04 | Login UC        | Essencial
-RF-05 | Profile UC      | Essencial
-RF-06 | Scheduling UC   | Essencial
-RF-07 | Attendance UC   | Essencial
-RF-08 | Notification UC | Essencial
-RF-09 | Record UC       | Essencial
-RF-10 | Record UA       | Essencial
+RF-02 | Login UA        | Essencial
+RF-03 | Profile UA      | Essencial
+RF-04 | Management UA   | Essencial
+RF-05 | Login UC        | Essencial
+RF-06 | Profile UC      | Essencial
+RF-07 | Scheduling UC   | Essencial
+RF-08 | Attendance UC   | Essencial
+RF-09 | Notification UC | Essencial
+RF-10 | Record UC       | Essencial
+RF-11 | Record UA       | Essencial
 
 ### Especificação dos atores da aplicação
 
@@ -287,6 +289,27 @@ Saídas e pós condições | Usuário cadastrado.
 ------
 ID | RF-02
 ---- | ----
+Nome | Login UA
+Descrição | UserAdmin deverá conseguir realizar o login na aplicação. O login deverá ser realizado com um email e senha.
+Atores | UserAdmin
+Prioridade | Essencial
+Requisitos Não-Funcionais associados |
+Entradas e pré-condições | RF-01
+Saídas e pós condições | Login realizado com sucesso
+
+- Fluxo de Eventos
+    - Fluxo Principal
+
+        1. O user UA entra na aplicação e insere o email e senha cadastrados na aplicação;
+        1. Após entrar com os dados, o usuário clica no botão entrar;
+        1. Após o Login realizado com sucesso, o usuário é redirecionado para a tela principal.
+
+    - Fluxo Secundário
+        - Caso haja alguma incongruência no item 2, uma mensagem de erro deverá ser mostrada em tela e o UA deverá tentar novamente ou sair do sistema.
+------
+------
+ID | RF-03
+---- | ----
 Nome | Profile UA
 Descrição | UserAdmin deverá ter uma sessão de usuário onde esta fornecerá informações sobre o mesmo, além de mostrar requisições feitas  a ele atualmente e anteriormente. O profile deverá conter informações cadastrais, e dados sobre requisições feitas por algum UC em determinado instante de tempo.
 Atores | UserCommom, UserAdmin
@@ -307,7 +330,7 @@ Saídas e pós condições | Perfil gerado e visualizado com sucesso.
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UA deverá ser redirecionado para a tela principal.
 ------
 ------
-ID | RF-03
+ID | RF-04
 ---- | ----
 Nome | Management UA
 Descrição | UserAdmin deverá conseguir gerenciar o fluxo de atividade previsto em sua prestação de serviço. O gerenciamento compete no uso de averiguar quantos UC serão atendidos em determinado espaço de tempo.
@@ -328,7 +351,7 @@ Saídas e pós condições |
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
 ------
 ------
-ID | RF-04
+ID | RF-05
 ---- | ----
 Nome | Login UC
 Descrição | UserCommom deverá conseguir realizar o login de forma simples e prática na aplicação. O primeiro login deverá ser realizado com sua matrícula e cpf. Logo após o primeiro login, o UC deverá cadastrar uma nova senha para acesso.
@@ -350,7 +373,7 @@ Saídas e pós condições | Login realizado com sucesso
         - Caso haja alguma incongruência no item 2, uma mensagem de erro deverá ser mostrada em tela e o UC deverá tentar novamente ou sair do sistema.
 ------
 ------
-ID | RF-05
+ID | RF-06
 ---- | ----
 Nome | Profile UC
 Descrição | UserCommom deverá ter uma sessão de usuário onde esta fornecerá informações sobre o mesmo, além de mostrar requisições feitas anteriormente. O profile deverá conter informações cadastrais, e dados sobre requisições feitas a algum UA em tempo passado.
@@ -372,7 +395,7 @@ Saídas e pós condições | Perfil gerado e visualizado com sucesso.
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser mostrada em tela, e o UC deverá ser redirecionado para a tela principal.
 ------
 ------
-ID | RF-06
+ID | RF-07
 ---- | ----
 Nome | Scheduling UC
 Descrição | O UserCommom deverá conseguir realizar um agendamento de forma simples e prática na aplicação. O agendamento consiste em se dispor a receber um serviço prestado por algum UA em algum T.
@@ -395,7 +418,7 @@ Saídas e pós condições | Agendamento realizado com sucesso.
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
 ------
 ------
-ID | RF-07
+ID | RF-08
 ---- | ----
 Nome | Attendance UC
 Descrição | O UserCommom deverá conseguir realizar o acompanhamento de sua solicitação de forma simples e prática na aplicação. O acompanhamento consiste em verificar o andamento da sua solicitação dentro do fluxo de serviços prestados, assim como sua posição na fila de atendimento.
@@ -417,7 +440,7 @@ Saídas e pós condições | Acompanhamento verificado com sucesso
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
 ------
 ------
-ID | RF-08
+ID | RF-09
 ---- | ----
 Nome | Notification UC
 Descrição | O UserCommom deverá receber uma notificação de quando estiver próximo de ter sua solicitação atendida. A notificação consiste em uma mensagem de texto mostrada em tela do quão próxima está a vez do UC ser atendido.
@@ -437,7 +460,7 @@ Saídas e pós condições | Notificação enviada com sucesso
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
 ------
 ------
-ID | RF-09
+ID | RF-10
 ---- | ----
 Nome | Record UC
 Descrição | O UserCommom deverá ter um histórico de atendimento a fim de prestar informarções sobre requisições anteriores realizadas pelo próprio UserCommom para algum UserAdimin em algum Time.
@@ -458,7 +481,7 @@ Saídas e pós condições | Histórico emitido e visualizado com sucesso.
         - Caso haja alguma incongruência, uma mensagem de erro deverá ser emitida em tela.
 ------
 ------
-ID | RF-10
+ID | RF-11
 ---- | ----
 Nome | Record UA
 Descrição | O histórico UA, que por sua vez, visualiza as requisições feitas pelo UserCommom e o orienta em como realizar o atendimento em detrimento dos atendimentos anteriores.
@@ -485,4 +508,36 @@ Pode-se visualizar abaixo o diagrama de Casos de uso da modelagem do sistema SIA
 
 ### Diagrama de Atividades
 
+#### Diagramas de Atividades dos Casos de Uso
 
+Segue abaixo os diagramas de atividades do Casos de uso criados a partir da elicitação de requisitos.
+
+<img alt="Diagrama de Atividade RF-01" align="center" src ="Diagrama de atividade/RF-01.png">
+
+<img alt="Diagrama de Atividade RF-02" align="center" src ="Diagrama de atividade/RF-02.png">
+
+<img alt="Diagrama de Atividade RF-03" align="center" src ="Diagrama de atividade/RF-03.png">
+
+<img alt="Diagrama de Atividade RF-04" align="center" src ="Diagrama de atividade/RF-04.png">
+
+<img alt="Diagrama de Atividade RF-05" align="center" src ="Diagrama de atividade/RF-05.png">
+
+<img alt="Diagrama de Atividade RF-06" align="center" src ="Diagrama de atividade/RF-06.png">
+
+<img alt="Diagrama de Atividade RF-07" align="center" src ="Diagrama de atividade/RF-07.png">
+
+<img alt="Diagrama de Atividade RF-08" align="center" src ="Diagrama de atividade/RF-08.jpeg">
+
+<img alt="Diagrama de Atividade RF-09" align="center" src ="Diagrama de atividade/RF-09.jpeg">
+
+<img alt="Diagrama de Atividade RF-10" align="center" src ="Diagrama de atividade/RF-10.jpeg">
+
+<img alt="Diagrama de Atividade RF-11" align="center" src ="Diagrama de atividade/RF-11.jpeg">
+
+#### Diagramas Gerais que representam todas as funcionalidades do sistema
+
+Os Diagramas abaixo refletem as funcionalidades gerais do sistema.
+
+<img alt="Diagrama geral UC" align="center" src ="Diagrama de atividade/Diagrama geral UC.png">
+
+<img alt="Diagrama geral UA" align="center" src ="Diagrama de atividade/Diagrama geral UA.png">
