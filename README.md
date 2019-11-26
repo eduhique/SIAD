@@ -1,5 +1,7 @@
 # SIAD -  Sistema Integrado de Agendamento para Departamentos
 
+<img alt="Logo" align="center" src ="logo.jpg">
+
 Professor: Eliane Araujo
 
 Equipe:
